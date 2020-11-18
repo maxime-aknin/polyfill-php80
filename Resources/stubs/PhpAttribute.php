@@ -1,7 +1,7 @@
 <?php
 
 #[Attribute(Attribute::TARGET_CLASS)]
-final class Attribute
+final class PhpAttribute
 {
     const TARGET_CLASS = 1;
     const TARGET_FUNCTION = 2;
@@ -15,7 +15,7 @@ final class Attribute
     /** @var int */
     public $flags;
 
-    public function __construct(int $flags = Attribute::TARGET_ALL)
+    public function __construct(int $flags = PhpAttribute::TARGET_ALL)
     {
         $this->flags = $flags;
     }
